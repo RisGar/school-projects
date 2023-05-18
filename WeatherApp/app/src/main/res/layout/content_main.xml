@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@drawable/bg_gradient"
+    android:id="@+id/main_view">
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textColor="@android:color/white"
+        android:text="Your Location"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_above="@+id/currentTemp"
+        android:layout_below="@id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/icon"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/currentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Loading"
+        android:textSize="100dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_below="@+id/currentTemp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/currentSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="Please"
+        android:textColor="@android:color/white"
+        android:textSize="50dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_below="@+id/currentSummary"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tomorrowTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="Wait"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
+
+
+</RelativeLayout>
